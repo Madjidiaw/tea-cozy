@@ -1,0 +1,335 @@
+/* -- General CSS Style */
+
+html {
+    font-size: 16px;
+}
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+h2, h3, h4 {
+  width: 100%;
+}
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+ 
+ul, 
+ol {
+   margin: 0;
+   padding: 0;
+   list-style: none; 
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+header {
+    border-bottom: 1px solid seashell;
+    /*height: 69px;*/
+    padding: 15px 0;
+}
+header .contain-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-decoration: underline;
+    
+}
+
+header nav ul li {
+  font-size: 1.125em;
+} 
+ 
+
+figure {
+    margin: 0;
+ }
+img {
+    width: 100%;
+}
+.our-mission {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;  
+    background-image: url('../img/img-mission-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+}
+.mission-text {
+    background: black;
+    vertical-align: middle;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    margin-left: 0%;
+    margin-right: 0%;
+    /*width: 1200px;*/
+}
+.mission-text h2, h4 {
+    width: 100%;
+}
+
+.tea-ofthe-month {
+    /*max-width: 1000px;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.tea-ofthe-month .featured-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+.tea-ofthe-month article {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 40px;
+    
+}
+.cozy-locations {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;  
+    background-image: url('../img/img-locations-background.jpg');
+    background-size: cover;
+    /*background-position: center;*/
+    min-height: 500px;
+
+}
+.cozy-locations .location {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap; 
+    align-items: center;
+    /*padding-left: 15px 40px 15px 15px;*/
+    
+}
+
+.location article {
+    width: 300px;
+    height: 300px;
+	  background: black;
+    padding: 20px;
+    margin-bottom: 40px;
+    
+}
+
+footer {
+    flex-direction: column;
+    text-align: center;
+}
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
+footer p {
+    margin: 0;
+}
+footer .contact {
+    margin-bottom: 50px;
+}
+.footer-content h2 {
+    width: 100%;
+}
+.footer-content p a {
+    color: seashell;
+}
+/*
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+} 
+*/
+
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .social-icons p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .copyright {
+    text-align: flex-start;
+    margin: 20px 0;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+/* ============================== Tablet Styles ============================= */ 
+@media only screen and (min-width: 768px) {
+    /* ----- General Styles ----- */
+    .content-wrapper {
+      max-width: 640px;
+      margin: 100px 0;
+    }
+
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.33em;
+    }
+  
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
+    
+    /* ----- Header Styles ----- */
+    header {
+      justify-content: space-around;
+      padding: 33px 0;
+    }
+
+    header nav {
+      width: 20%;
+    }
+
+    header nav ul {
+      justify-content: space-between;
+    }
+
+    .header-divider {
+      display: none;
+    }
+
+    header .content-wrapper {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    header figure {
+      width: 30%;
+    }
+    .tea-ofthe-month article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      flex-basis: 50%;
+    }
+    .our-mission {
+      min-height: 600px;
+    }
+    /* ----- Footer Styles ----- */
+    .footer .content-wrapper {
+      width: 65%;
+      margin: 100px 0;
+
+    }
+    .footer-content h2 {
+      width: 100%;
+    }
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+    
+    footer p {
+      line-height: 1.29;
+    }
+  
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+    footer .contact {
+      margin-bottom: 0;
+    }
+
+    footer .copyright {
+      width: 100%;
+    }
+
+}
+/* ============================== Desktop Styles ============================= */ 
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 1100px;
+  }
+  header {
+    padding: 15px 0;
+  }
+  h2 {
+    font-size: 1.875em;
+  }
+  h4 {
+    font-size: 1.375em;
+  }
+
+  .mission-text {
+     width: 100%;
+    
+     margin-left: 0%;
+     margin-right: 0%;
+  }
+
+  p {
+      font-size: 1.1em;
+      line-height: 1.333;
+  }
+  .tea-ofthe-month article {
+    flex-basis: 33%;
+  }
+ 
+  .tea-ofthe-month h2, h4 {
+      width: 100%;  
+  } 
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .footer-content h2 {
+    width: 100%;
+  }
+  footer .copyright {
+    width: 100%;
+    text-align: start;
+  }
+}  
